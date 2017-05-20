@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>New York Times API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <scrtipt src="app.js"></scrtipt>
+
+</head>
+<body>
+    <div class = "container">
+        <div class = "header jumbotron">
+            <h1 class = "">Employee Data Management</h1>
+            <h4>A Comprehensive Directory of Employee Billable Hours</h4>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title"><span class="glyphicon" aria-hidden="true"></span>Current Employees</h5>
+            </div>
+            <div id = "employees" class="panel-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        
+                            <th>Employee Name</th>
+                            <th>Role</th>
+                            <th>Start Date</th>
+                            <th>Months Worked</th>
+                            <th>Monthly Rate</th>
+                            <th>Total Billed</th>
+                        </tr>
+                    </thead>
+                </table>
+                
+
+            </div>
+            
+        </div>
+        <div class="panel panel-default">
+             <div class="panel-heading">
+                <h5 class="panel-title"><span class="" aria-hidden="true"></span>Add Employee</h5>
+            </div>
+            <div class="panel-body serachParameters">
+                <form>
+                    <div class="form-group">
+                        <p>Employee Name</p>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </form>
+
+                <form>
+                    <div class="form-group">
+                        <p>Role</p>
+                        <input type="text" class="form-control" id="role">
+                    </div>
+                </form>
+                <form>
+                    <div class="form-group">
+                        <p>Start Date</p>
+                        <input type="text" class="form-control" id="sDate">
+                    </div>
+                </form>
+                <form>
+                    <div class="form-group">
+                        <p>Monthly Rate</p>
+                        <input type="text" class="form-control" id="rate">
+                    </div>
+                </form>
+                <button type="button" class="btn btn-default" id = "addEmp">
+                    <span class="" aria-hidden="true"></span>Submit
+                </button>
+             </div>
+        </div>
+
+
+</body>
+</html>
