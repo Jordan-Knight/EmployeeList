@@ -51,8 +51,7 @@ database.ref().on("child_added", function (cSnap){
 	row.append(tRate);
 	row.append(bill);
 
-	$("#emps").append(row);
-
+	$("#emps").prepend(row);
 
 
  	});
