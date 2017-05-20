@@ -12,9 +12,6 @@
  
  var database = firebase.database();
 
-
-
-
  $("#addEmp").on("click", function(event){
 
  	event.preventDefault();
@@ -31,6 +28,11 @@
  		rate : rate
 
  	});
+
+ 	$("#name").val("");
+ 	$("#role").val("");
+ 	$("#sDate").val("");
+ 	$("#rate").val("");
 
  });
 
@@ -52,7 +54,6 @@ database.ref().on("child_added", function (cSnap){
 	row.append(bill);
 
 	$("#emps").prepend(row);
-
 
  	});
 });
