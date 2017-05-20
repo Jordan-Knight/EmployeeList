@@ -32,30 +32,28 @@
 
  	});
 
- 	database.ref().on("child_added", function (cSnap){
- 		var child = cSnap.val();
- 		var row = $("<tr>");
- 		var tName = $("<td>" + child.name + "</td>");
- 		var tRole = $("<td>" + child.role + "</td>");
- 		var tSDate = $("<td>" + child.startDate + "</td>");
- 		var months = $("<td> </td>");
- 		var tRate = $("<td>" + child.rate + "</td>");
- 		var bill = $("<td> </td>");
+ });
 
- 		row.append(tName);
- 		row.append(tRole);
- 		row.append(tSDate);
- 		row.append(months);
- 		row.append(tRate);
- 		row.append(bill);
+database.ref().on("child_added", function (cSnap){
+	var child = cSnap.val();
+	var row = $("<tr>");
+	var tName = $("<td>" + child.name + "</td>");
+	var tRole = $("<td>" + child.role + "</td>");
+	var tSDate = $("<td>" + child.startDate + "</td>");
+	var months = $("<td> </td>");
+	var tRate = $("<td>" + child.rate + "</td>");
+	var bill = $("<td> </td>");
 
- 		$("#emps").append(row);
+	row.append(tName);
+	row.append(tRole);
+	row.append(tSDate);
+	row.append(months);
+	row.append(tRate);
+	row.append(bill);
+
+	$("#emps").append(row);
 
 
 
  	});
-
-
-
- });
 });
